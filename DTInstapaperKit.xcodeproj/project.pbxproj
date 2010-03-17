@@ -13,7 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		24988D0E115176C8008F51D5 /* DTCacheURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */; };
 		24988D0F115176C8008F51D5 /* DTConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D02115176C8008F51D5 /* DTConnection.m */; };
-		24988D10115176C8008F51D5 /* DTConnection.m.orig in Resources */ = {isa = PBXBuildFile; fileRef = 24988D03115176C8008F51D5 /* DTConnection.m.orig */; };
 		24988D11115176C8008F51D5 /* DTConnectionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D05115176C8008F51D5 /* DTConnectionQueue.m */; };
 		24988D12115176C8008F51D5 /* DTCoreDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D07115176C8008F51D5 /* DTCoreDataConnection.m */; };
 		24988D13115176C8008F51D5 /* DTFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D09115176C8008F51D5 /* DTFileCache.m */; };
@@ -37,7 +36,6 @@
 		24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCacheURLProtocol.m; sourceTree = "<group>"; };
 		24988D01115176C7008F51D5 /* DTConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConnection.h; sourceTree = "<group>"; };
 		24988D02115176C8008F51D5 /* DTConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConnection.m; sourceTree = "<group>"; };
-		24988D03115176C8008F51D5 /* DTConnection.m.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DTConnection.m.orig; sourceTree = "<group>"; };
 		24988D04115176C8008F51D5 /* DTConnectionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConnectionQueue.h; sourceTree = "<group>"; };
 		24988D05115176C8008F51D5 /* DTConnectionQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConnectionQueue.m; sourceTree = "<group>"; };
 		24988D06115176C8008F51D5 /* DTCoreDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoreDataConnection.h; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */,
 				24988D01115176C7008F51D5 /* DTConnection.h */,
 				24988D02115176C8008F51D5 /* DTConnection.m */,
-				24988D03115176C8008F51D5 /* DTConnection.m.orig */,
 				24988D04115176C8008F51D5 /* DTConnectionQueue.h */,
 				24988D05115176C8008F51D5 /* DTConnectionQueue.m */,
 				24988D06115176C8008F51D5 /* DTCoreDataConnection.h */,
@@ -215,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				24988D10115176C8008F51D5 /* DTConnection.m.orig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
