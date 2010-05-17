@@ -11,6 +11,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		244C085211A19F7E00D960A4 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 244C085111A19F7E00D960A4 /* NSData+Base64.m */; };
 		24988D0E115176C8008F51D5 /* DTCacheURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */; };
 		24988D0F115176C8008F51D5 /* DTConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D02115176C8008F51D5 /* DTConnection.m */; };
 		24988D11115176C8008F51D5 /* DTConnectionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D05115176C8008F51D5 /* DTConnectionQueue.m */; };
@@ -32,6 +33,8 @@
 		1D3623250D0F684500981E51 /* DTInstapaperKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperKitAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DTInstapaperKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTInstapaperKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		244C085011A19F7E00D960A4 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		244C085111A19F7E00D960A4 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		24988CFF115176C7008F51D5 /* DTCacheURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCacheURLProtocol.h; sourceTree = "<group>"; };
 		24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCacheURLProtocol.m; sourceTree = "<group>"; };
 		24988D01115176C7008F51D5 /* DTConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConnection.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				24988D0B115176C8008F51D5 /* DTURLConnection.m */,
 				24988D0C115176C8008F51D5 /* DTURLLoadingConnection.h */,
 				24988D0D115176C8008F51D5 /* DTURLLoadingConnection.m */,
+				244C085011A19F7E00D960A4 /* NSData+Base64.h */,
+				244C085111A19F7E00D960A4 /* NSData+Base64.m */,
 			);
 			path = DTConnectionKit;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				24988D2211517711008F51D5 /* DTInstapaperLoginConnection.m in Sources */,
 				24988D271151774A008F51D5 /* DTInstapaperAddConnection.m in Sources */,
 				24988E5511518AFE008F51D5 /* DTInstapaperConnection.m in Sources */,
+				244C085211A19F7E00D960A4 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
