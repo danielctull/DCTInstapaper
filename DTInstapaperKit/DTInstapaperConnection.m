@@ -22,15 +22,12 @@
 	self.type = DTConnectionTypePost;
 	
 	NSMutableURLRequest *request = [super newRequest];
-	
-	NSMutableString *bodyString = [[NSMutableString alloc] init];
-	
-	[bodyString appendFormat:@"username=%@", self.username];
-	if (self.password && ![self.password isEqualToString:@""]) [bodyString appendFormat:@"&password=%@", self.password];
-	
-	NSData *body = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
-	[bodyString release];
-	[request setHTTPBody:body];
+		
+	NSString *authorisationString = [NSString stringWithFormat:@"%@:%@", username, password];
+	NSData *authorisationData = [authorisationString dataUsingEncoding:NSUTF8StringEncoding];
+	NSString *authorisationEncodedString = [authorisationData base64EncodedString];
+	NSString *authorisationHeader = [NSString stringWithFormat:@"Basic %@", authorisationEncodedString];
+	[request addValue:authorisationHeader forHTTPHeaderField:@"Authorization"];
 	
 	return request;
 }
@@ -49,7 +46,7 @@
 	
 	NSInteger statusCode = [httpResponse statusCode];
 	
-	NSLog(@"%@:%s %i", self, _cmd, statusCode);
+	//NSLog(@"%@:%s %i", self, _cmd, statusCode);
 	if (statusCode == 200) {
 		
 	} else if (statusCode == 403) {
