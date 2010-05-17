@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DTURLConnection.h"
+#import "NSData+Base64.h"
 
 /** @brief Specifies the type of connection to use.
  */
