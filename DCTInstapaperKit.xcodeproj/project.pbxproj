@@ -16,7 +16,7 @@
 		242DD7BB126A683B00306828 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242DD7B9126A683B00306828 /* MainWindow.xib */; };
 		24C11D11126A68DC0010A2D3 /* DCTInstapaperAddConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D0C126A68DC0010A2D3 /* DCTInstapaperAddConnection.m */; };
 		24C11D12126A68DC0010A2D3 /* DCTInstapaperConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D0E126A68DC0010A2D3 /* DCTInstapaperConnection.m */; };
-		24C11D13126A68DC0010A2D3 /* DTInstapaperLoginConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D10126A68DC0010A2D3 /* DTInstapaperLoginConnection.m */; };
+		24C11D13126A68DC0010A2D3 /* DCTInstapaperLoginConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D10126A68DC0010A2D3 /* DCTInstapaperLoginConnection.m */; };
 		24C11D59126A69230010A2D3 /* DTCacheURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D31126A69220010A2D3 /* DTCacheURLProtocol.m */; };
 		24C11D5A126A69230010A2D3 /* DTFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D33126A69220010A2D3 /* DTFileCache.m */; };
 		24C11D5B126A69230010A2D3 /* NSBundle+DTInfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D36126A69220010A2D3 /* NSBundle+DTInfoPlist.m */; };
@@ -54,8 +54,8 @@
 		24C11D0C126A68DC0010A2D3 /* DCTInstapaperAddConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTInstapaperAddConnection.m; sourceTree = "<group>"; };
 		24C11D0D126A68DC0010A2D3 /* DCTInstapaperConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DCTInstapaperConnection.h; sourceTree = "<group>"; };
 		24C11D0E126A68DC0010A2D3 /* DCTInstapaperConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTInstapaperConnection.m; sourceTree = "<group>"; };
-		24C11D0F126A68DC0010A2D3 /* DTInstapaperLoginConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperLoginConnection.h; sourceTree = "<group>"; };
-		24C11D10126A68DC0010A2D3 /* DTInstapaperLoginConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperLoginConnection.m; sourceTree = "<group>"; };
+		24C11D0F126A68DC0010A2D3 /* DCTInstapaperLoginConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DCTInstapaperLoginConnection.h; sourceTree = "<group>"; };
+		24C11D10126A68DC0010A2D3 /* DCTInstapaperLoginConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTInstapaperLoginConnection.m; sourceTree = "<group>"; };
 		24C11D30126A69220010A2D3 /* DTCacheURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCacheURLProtocol.h; sourceTree = "<group>"; };
 		24C11D31126A69220010A2D3 /* DTCacheURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCacheURLProtocol.m; sourceTree = "<group>"; };
 		24C11D32126A69220010A2D3 /* DTFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFileCache.h; sourceTree = "<group>"; };
@@ -176,8 +176,8 @@
 				24C11D0E126A68DC0010A2D3 /* DCTInstapaperConnection.m */,
 				24C11D0B126A68DC0010A2D3 /* DCTInstapaperAddConnection.h */,
 				24C11D0C126A68DC0010A2D3 /* DCTInstapaperAddConnection.m */,
-				24C11D0F126A68DC0010A2D3 /* DTInstapaperLoginConnection.h */,
-				24C11D10126A68DC0010A2D3 /* DTInstapaperLoginConnection.m */,
+				24C11D0F126A68DC0010A2D3 /* DCTInstapaperLoginConnection.h */,
+				24C11D10126A68DC0010A2D3 /* DCTInstapaperLoginConnection.m */,
 			);
 			path = DCTInstapaperKit;
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 				242DD7B8126A683B00306828 /* DCTInstapaperKitAppDelegate.m in Sources */,
 				24C11D11126A68DC0010A2D3 /* DCTInstapaperAddConnection.m in Sources */,
 				24C11D12126A68DC0010A2D3 /* DCTInstapaperConnection.m in Sources */,
-				24C11D13126A68DC0010A2D3 /* DTInstapaperLoginConnection.m in Sources */,
+				24C11D13126A68DC0010A2D3 /* DCTInstapaperLoginConnection.m in Sources */,
 				24C11D59126A69230010A2D3 /* DTCacheURLProtocol.m in Sources */,
 				24C11D5A126A69230010A2D3 /* DTFileCache.m in Sources */,
 				24C11D5B126A69230010A2D3 /* NSBundle+DTInfoPlist.m in Sources */,

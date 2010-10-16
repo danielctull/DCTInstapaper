@@ -1,5 +1,5 @@
 //
-//  DTInstapaperLoginConnection.h
+//  DCTInstapaperLoginConnection.h
 //  DTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
@@ -8,6 +8,6 @@
 
 #import "DCTInstapaperConnection.h"
 
-@interface DTInstapaperLoginConnection : DCTInstapaperConnection {
+@interface DCTInstapaperLoginConnection : DCTInstapaperConnection {
 }
 @end

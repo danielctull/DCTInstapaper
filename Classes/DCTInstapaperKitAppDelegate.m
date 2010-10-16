@@ -7,7 +7,7 @@
 //
 
 #import "DCTInstapaperKitAppDelegate.h"
-#import "DTInstapaperLoginConnection.h"
+#import "DCTInstapaperLoginConnection.h"
 #import "DCTInstapaperAddConnection.h"
 
 @implementation DCTInstapaperKitAppDelegate
@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
-	DTInstapaperLoginConnection *login = [[DTInstapaperLoginConnection alloc] init];
+	DCTInstapaperLoginConnection *login = [[DCTInstapaperLoginConnection alloc] init];
 	login.username = @"danieltull";
 	[login connect];
 	

@@ -1,14 +1,14 @@
 //
-//  DTInstapaperLoginConnection.m
+//  DCTInstapaperLoginConnection.m
 //  DTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DTInstapaperLoginConnection.h"
+#import "DCTInstapaperLoginConnection.h"
 
-@implementation DTInstapaperLoginConnection
+@implementation DCTInstapaperLoginConnection
 
 - (NSMutableURLRequest *)newRequest {
 	NSMutableURLRequest *request = [super newRequest];
