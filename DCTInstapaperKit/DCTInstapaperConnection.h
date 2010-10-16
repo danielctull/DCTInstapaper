@@ -1,5 +1,5 @@
 //
-//  DTInstapaperConnection.h
+//  DCTInstapaperConnection.h
 //  DTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
@@ -8,7 +8,7 @@
 
 #import "DCTConnectionController.h"
 
-@interface DTInstapaperConnection : DCTConnectionController {
+@interface DCTInstapaperConnection : DCTConnectionController {
 	NSString *username, *password;
 }
 @property (nonatomic, retain) NSString *username, *password;

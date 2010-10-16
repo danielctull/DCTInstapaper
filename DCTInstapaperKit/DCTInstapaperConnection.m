@@ -1,15 +1,15 @@
 //
-//  DTInstapaperConnection.m
+//  DCTInstapaperConnection.m
 //  DTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DTInstapaperConnection.h"
+#import "DCTInstapaperConnection.h"
 #import "NSData+Base64.h"
 
-@implementation DTInstapaperConnection
+@implementation DCTInstapaperConnection
 @synthesize username, password;
 
 - (void)dealloc {

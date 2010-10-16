@@ -6,9 +6,9 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DTInstapaperConnection.h"
+#import "DCTInstapaperConnection.h"
 
-@interface DCTInstapaperAddConnection : DTInstapaperConnection {
+@interface DCTInstapaperAddConnection : DCTInstapaperConnection {
 	NSString *url, *title, *selection;
 }
 @property (nonatomic, retain) NSString *url, *title, *selection;
