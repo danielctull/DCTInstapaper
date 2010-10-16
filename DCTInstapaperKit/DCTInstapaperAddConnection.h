@@ -1,5 +1,5 @@
 //
-//  DTInstapaperAddConnection.h
+//  DCTInstapaperAddConnection.h
 //  DTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
@@ -8,7 +8,7 @@
 
 #import "DTInstapaperConnection.h"
 
-@interface DTInstapaperAddConnection : DTInstapaperConnection {
+@interface DCTInstapaperAddConnection : DTInstapaperConnection {
 	NSString *url, *title, *selection;
 }
 @property (nonatomic, retain) NSString *url, *title, *selection;

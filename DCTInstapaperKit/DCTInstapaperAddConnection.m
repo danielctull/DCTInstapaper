@@ -1,14 +1,14 @@
 //
-//  DTInstapaperAddConnection.m
+//  DCTInstapaperAddConnection.m
 //  DTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DTInstapaperAddConnection.h"
+#import "DCTInstapaperAddConnection.h"
 
-@implementation DTInstapaperAddConnection
+@implementation DCTInstapaperAddConnection
 
 @synthesize url, title, selection;
 

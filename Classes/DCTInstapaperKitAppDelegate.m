@@ -8,7 +8,7 @@
 
 #import "DCTInstapaperKitAppDelegate.h"
 #import "DTInstapaperLoginConnection.h"
-#import "DTInstapaperAddConnection.h"
+#import "DCTInstapaperAddConnection.h"
 
 @implementation DCTInstapaperKitAppDelegate
 
@@ -21,7 +21,7 @@
 	login.username = @"danieltull";
 	[login connect];
 	
-	DTInstapaperAddConnection *add = [[DTInstapaperAddConnection alloc] init];
+	DCTInstapaperAddConnection *add = [[DCTInstapaperAddConnection alloc] init];
 	add.username = @"danieltull";
 	add.url = @"http://www.engadget.com/2010/03/17/uk-folding-plug-takes-home-design-award-emerges-in-usb-infused/";
 	[add connect];
