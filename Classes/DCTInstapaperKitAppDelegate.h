@@ -1,6 +1,6 @@
 //
-//  DTInstapaperKitAppDelegate.h
-//  DTInstapaperKit
+//  DCTInstapaperKitAppDelegate.h
+//  DCTInstapaperKit
 //
 //  Created by Daniel Tull on 17.03.2010.
 //  Copyright Daniel Tull 2010. All rights reserved.
