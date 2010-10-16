@@ -6,11 +6,11 @@
 //  Copyright Daniel Tull 2010. All rights reserved.
 //
 
-#import "DTInstapaperKitAppDelegate.h"
+#import "DCTInstapaperKitAppDelegate.h"
 #import "DTInstapaperLoginConnection.h"
 #import "DTInstapaperAddConnection.h"
 
-@implementation DTInstapaperKitAppDelegate
+@implementation DCTInstapaperKitAppDelegate
 
 @synthesize window;
 

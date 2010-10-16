@@ -7,7 +7,7 @@
 //
 
 #import "DTInstapaperConnection.h"
-
+#import "NSData+Base64.h"
 
 @implementation DTInstapaperConnection
 @synthesize username, password;
@@ -19,7 +19,7 @@
 }
 
 - (NSMutableURLRequest *)newRequest {
-	self.type = DTConnectionTypePost;
+	self.type = DCTConnectionControllerTypePost;
 	
 	NSMutableURLRequest *request = [super newRequest];
 		

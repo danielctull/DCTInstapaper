@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTInstapaperKitAppDelegate : NSObject <UIApplicationDelegate> {
+@interface DCTInstapaperKitAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 }
 

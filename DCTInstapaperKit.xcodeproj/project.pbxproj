@@ -3,271 +3,420 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* DTInstapaperKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DTInstapaperKitAppDelegate.m */; };
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		244C085211A19F7E00D960A4 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 244C085111A19F7E00D960A4 /* NSData+Base64.m */; };
-		24988D0E115176C8008F51D5 /* DTCacheURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */; };
-		24988D0F115176C8008F51D5 /* DTConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D02115176C8008F51D5 /* DTConnection.m */; };
-		24988D11115176C8008F51D5 /* DTConnectionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D05115176C8008F51D5 /* DTConnectionQueue.m */; };
-		24988D12115176C8008F51D5 /* DTCoreDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D07115176C8008F51D5 /* DTCoreDataConnection.m */; };
-		24988D13115176C8008F51D5 /* DTFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D09115176C8008F51D5 /* DTFileCache.m */; };
-		24988D14115176C8008F51D5 /* DTURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D0B115176C8008F51D5 /* DTURLConnection.m */; };
-		24988D15115176C8008F51D5 /* DTURLLoadingConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D0D115176C8008F51D5 /* DTURLLoadingConnection.m */; };
-		24988D18115176D3008F51D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24988D17115176D3008F51D5 /* CoreData.framework */; };
-		24988D2211517711008F51D5 /* DTInstapaperLoginConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D2111517711008F51D5 /* DTInstapaperLoginConnection.m */; };
-		24988D271151774A008F51D5 /* DTInstapaperAddConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988D261151774A008F51D5 /* DTInstapaperAddConnection.m */; };
-		24988E5511518AFE008F51D5 /* DTInstapaperConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24988E5411518AFE008F51D5 /* DTInstapaperConnection.m */; };
-		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		242DD7AA126A683B00306828 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242DD7A9126A683B00306828 /* UIKit.framework */; };
+		242DD7AC126A683B00306828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242DD7AB126A683B00306828 /* Foundation.framework */; };
+		242DD7AE126A683B00306828 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242DD7AD126A683B00306828 /* CoreGraphics.framework */; };
+		242DD7B3126A683B00306828 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 242DD7B1126A683B00306828 /* InfoPlist.strings */; };
+		242DD7B5126A683B00306828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 242DD7B4126A683B00306828 /* main.m */; };
+		242DD7B8126A683B00306828 /* DCTInstapaperKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 242DD7B7126A683B00306828 /* DCTInstapaperKitAppDelegate.m */; };
+		242DD7BB126A683B00306828 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242DD7B9126A683B00306828 /* MainWindow.xib */; };
+		24C11D11126A68DC0010A2D3 /* DTInstapaperAddConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D0C126A68DC0010A2D3 /* DTInstapaperAddConnection.m */; };
+		24C11D12126A68DC0010A2D3 /* DTInstapaperConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D0E126A68DC0010A2D3 /* DTInstapaperConnection.m */; };
+		24C11D13126A68DC0010A2D3 /* DTInstapaperLoginConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D10126A68DC0010A2D3 /* DTInstapaperLoginConnection.m */; };
+		24C11D59126A69230010A2D3 /* DTCacheURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D31126A69220010A2D3 /* DTCacheURLProtocol.m */; };
+		24C11D5A126A69230010A2D3 /* DTFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D33126A69220010A2D3 /* DTFileCache.m */; };
+		24C11D5B126A69230010A2D3 /* NSBundle+DTInfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D36126A69220010A2D3 /* NSBundle+DTInfoPlist.m */; };
+		24C11D5C126A69230010A2D3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D38126A69220010A2D3 /* NSData+Base64.m */; };
+		24C11D5D126A69230010A2D3 /* NSDictionary+DTLocateObjectForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D3A126A69220010A2D3 /* NSDictionary+DTLocateObjectForKey.m */; };
+		24C11D5E126A69230010A2D3 /* NSString+DTURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D3C126A69220010A2D3 /* NSString+DTURLEncoding.m */; };
+		24C11D5F126A69230010A2D3 /* DCTCoreDataConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D3F126A69220010A2D3 /* DCTCoreDataConnectionController.m */; };
+		24C11D60126A69230010A2D3 /* DCTRequestConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D41126A69220010A2D3 /* DCTRequestConnectionController.m */; };
+		24C11D61126A69230010A2D3 /* DCTURLLoadingConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D43126A69220010A2D3 /* DCTURLLoadingConnectionController.m */; };
+		24C11D62126A69230010A2D3 /* DCTConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D45126A69220010A2D3 /* DCTConnectionController.m */; };
+		24C11D63126A69230010A2D3 /* DCTConnectionQueue+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D47126A69220010A2D3 /* DCTConnectionQueue+Singleton.m */; };
+		24C11D64126A69230010A2D3 /* DCTConnectionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D49126A69220010A2D3 /* DCTConnectionQueue.m */; };
+		24C11D65126A69230010A2D3 /* DCTRESTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D4B126A69220010A2D3 /* DCTRESTController.m */; };
+		24C11D66126A69230010A2D3 /* DCTURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D4D126A69220010A2D3 /* DCTURLConnection.m */; };
+		24C11D67126A69230010A2D3 /* DCTOAuthAccessTokenConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D50126A69220010A2D3 /* DCTOAuthAccessTokenConnectionController.m */; };
+		24C11D68126A69230010A2D3 /* DCTOAuthConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D52126A69220010A2D3 /* DCTOAuthConnectionController.m */; };
+		24C11D69126A69230010A2D3 /* DCTOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D54126A69220010A2D3 /* DCTOAuthController.m */; };
+		24C11D6A126A69230010A2D3 /* DCTOAuthRequestTokenConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D56126A69220010A2D3 /* DCTOAuthRequestTokenConnectionController.m */; };
+		24C11D6B126A69230010A2D3 /* DCTOAuthSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C11D58126A69220010A2D3 /* DCTOAuthSignature.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* DTInstapaperKitAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperKitAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* DTInstapaperKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperKitAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* DCTInstapaperKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTInstapaperKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		244C085011A19F7E00D960A4 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		244C085111A19F7E00D960A4 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		24988CFF115176C7008F51D5 /* DTCacheURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCacheURLProtocol.h; sourceTree = "<group>"; };
-		24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCacheURLProtocol.m; sourceTree = "<group>"; };
-		24988D01115176C7008F51D5 /* DTConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConnection.h; sourceTree = "<group>"; };
-		24988D02115176C8008F51D5 /* DTConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConnection.m; sourceTree = "<group>"; };
-		24988D04115176C8008F51D5 /* DTConnectionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConnectionQueue.h; sourceTree = "<group>"; };
-		24988D05115176C8008F51D5 /* DTConnectionQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConnectionQueue.m; sourceTree = "<group>"; };
-		24988D06115176C8008F51D5 /* DTCoreDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoreDataConnection.h; sourceTree = "<group>"; };
-		24988D07115176C8008F51D5 /* DTCoreDataConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCoreDataConnection.m; sourceTree = "<group>"; };
-		24988D08115176C8008F51D5 /* DTFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFileCache.h; sourceTree = "<group>"; };
-		24988D09115176C8008F51D5 /* DTFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFileCache.m; sourceTree = "<group>"; };
-		24988D0A115176C8008F51D5 /* DTURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTURLConnection.h; sourceTree = "<group>"; };
-		24988D0B115176C8008F51D5 /* DTURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTURLConnection.m; sourceTree = "<group>"; };
-		24988D0C115176C8008F51D5 /* DTURLLoadingConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTURLLoadingConnection.h; sourceTree = "<group>"; };
-		24988D0D115176C8008F51D5 /* DTURLLoadingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTURLLoadingConnection.m; sourceTree = "<group>"; };
-		24988D17115176D3008F51D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		24988D2011517711008F51D5 /* DTInstapaperLoginConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperLoginConnection.h; sourceTree = "<group>"; };
-		24988D2111517711008F51D5 /* DTInstapaperLoginConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperLoginConnection.m; sourceTree = "<group>"; };
-		24988D251151774A008F51D5 /* DTInstapaperAddConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperAddConnection.h; sourceTree = "<group>"; };
-		24988D261151774A008F51D5 /* DTInstapaperAddConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperAddConnection.m; sourceTree = "<group>"; };
-		24988E5311518AFE008F51D5 /* DTInstapaperConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperConnection.h; sourceTree = "<group>"; };
-		24988E5411518AFE008F51D5 /* DTInstapaperConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperConnection.m; sourceTree = "<group>"; };
-		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* DCTInstapaperKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTInstapaperKit_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* DCTInstapaperKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DCTInstapaperKit-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		242DD7A6126A683B00306828 /* DCTInstapaperKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTInstapaperKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		242DD7A9126A683B00306828 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		242DD7AB126A683B00306828 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		242DD7AD126A683B00306828 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		242DD7AF126A683B00306828 /* DCTInstapaperKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTInstapaperKit-Info.plist"; sourceTree = "<group>"; };
+		242DD7B0126A683B00306828 /* DCTInstapaperKit_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTInstapaperKit_Prefix.pch; sourceTree = "<group>"; };
+		242DD7B2126A683B00306828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		242DD7B4126A683B00306828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		242DD7B6126A683B00306828 /* DCTInstapaperKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTInstapaperKitAppDelegate.h; sourceTree = "<group>"; };
+		242DD7B7126A683B00306828 /* DCTInstapaperKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTInstapaperKitAppDelegate.m; sourceTree = "<group>"; };
+		242DD7BA126A683B00306828 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		24C11D0B126A68DC0010A2D3 /* DTInstapaperAddConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperAddConnection.h; sourceTree = "<group>"; };
+		24C11D0C126A68DC0010A2D3 /* DTInstapaperAddConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperAddConnection.m; sourceTree = "<group>"; };
+		24C11D0D126A68DC0010A2D3 /* DTInstapaperConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperConnection.h; sourceTree = "<group>"; };
+		24C11D0E126A68DC0010A2D3 /* DTInstapaperConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperConnection.m; sourceTree = "<group>"; };
+		24C11D0F126A68DC0010A2D3 /* DTInstapaperLoginConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInstapaperLoginConnection.h; sourceTree = "<group>"; };
+		24C11D10126A68DC0010A2D3 /* DTInstapaperLoginConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTInstapaperLoginConnection.m; sourceTree = "<group>"; };
+		24C11D30126A69220010A2D3 /* DTCacheURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCacheURLProtocol.h; sourceTree = "<group>"; };
+		24C11D31126A69220010A2D3 /* DTCacheURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCacheURLProtocol.m; sourceTree = "<group>"; };
+		24C11D32126A69220010A2D3 /* DTFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFileCache.h; sourceTree = "<group>"; };
+		24C11D33126A69220010A2D3 /* DTFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFileCache.m; sourceTree = "<group>"; };
+		24C11D35126A69220010A2D3 /* NSBundle+DTInfoPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DTInfoPlist.h"; sourceTree = "<group>"; };
+		24C11D36126A69220010A2D3 /* NSBundle+DTInfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DTInfoPlist.m"; sourceTree = "<group>"; };
+		24C11D37126A69220010A2D3 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		24C11D38126A69220010A2D3 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		24C11D39126A69220010A2D3 /* NSDictionary+DTLocateObjectForKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DTLocateObjectForKey.h"; sourceTree = "<group>"; };
+		24C11D3A126A69220010A2D3 /* NSDictionary+DTLocateObjectForKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DTLocateObjectForKey.m"; sourceTree = "<group>"; };
+		24C11D3B126A69220010A2D3 /* NSString+DTURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DTURLEncoding.h"; sourceTree = "<group>"; };
+		24C11D3C126A69220010A2D3 /* NSString+DTURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DTURLEncoding.m"; sourceTree = "<group>"; };
+		24C11D3E126A69220010A2D3 /* DCTCoreDataConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTCoreDataConnectionController.h; sourceTree = "<group>"; };
+		24C11D3F126A69220010A2D3 /* DCTCoreDataConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTCoreDataConnectionController.m; sourceTree = "<group>"; };
+		24C11D40126A69220010A2D3 /* DCTRequestConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTRequestConnectionController.h; sourceTree = "<group>"; };
+		24C11D41126A69220010A2D3 /* DCTRequestConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTRequestConnectionController.m; sourceTree = "<group>"; };
+		24C11D42126A69220010A2D3 /* DCTURLLoadingConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTURLLoadingConnectionController.h; sourceTree = "<group>"; };
+		24C11D43126A69220010A2D3 /* DCTURLLoadingConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTURLLoadingConnectionController.m; sourceTree = "<group>"; };
+		24C11D44126A69220010A2D3 /* DCTConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTConnectionController.h; sourceTree = "<group>"; };
+		24C11D45126A69220010A2D3 /* DCTConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTConnectionController.m; sourceTree = "<group>"; };
+		24C11D46126A69220010A2D3 /* DCTConnectionQueue+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionQueue+Singleton.h"; sourceTree = "<group>"; };
+		24C11D47126A69220010A2D3 /* DCTConnectionQueue+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionQueue+Singleton.m"; sourceTree = "<group>"; };
+		24C11D48126A69220010A2D3 /* DCTConnectionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTConnectionQueue.h; sourceTree = "<group>"; };
+		24C11D49126A69220010A2D3 /* DCTConnectionQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTConnectionQueue.m; sourceTree = "<group>"; };
+		24C11D4A126A69220010A2D3 /* DCTRESTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTRESTController.h; sourceTree = "<group>"; };
+		24C11D4B126A69220010A2D3 /* DCTRESTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTRESTController.m; sourceTree = "<group>"; };
+		24C11D4C126A69220010A2D3 /* DCTURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTURLConnection.h; sourceTree = "<group>"; };
+		24C11D4D126A69220010A2D3 /* DCTURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTURLConnection.m; sourceTree = "<group>"; };
+		24C11D4F126A69220010A2D3 /* DCTOAuthAccessTokenConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTOAuthAccessTokenConnectionController.h; sourceTree = "<group>"; };
+		24C11D50126A69220010A2D3 /* DCTOAuthAccessTokenConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTOAuthAccessTokenConnectionController.m; sourceTree = "<group>"; };
+		24C11D51126A69220010A2D3 /* DCTOAuthConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTOAuthConnectionController.h; sourceTree = "<group>"; };
+		24C11D52126A69220010A2D3 /* DCTOAuthConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTOAuthConnectionController.m; sourceTree = "<group>"; };
+		24C11D53126A69220010A2D3 /* DCTOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTOAuthController.h; sourceTree = "<group>"; };
+		24C11D54126A69220010A2D3 /* DCTOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTOAuthController.m; sourceTree = "<group>"; };
+		24C11D55126A69220010A2D3 /* DCTOAuthRequestTokenConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTOAuthRequestTokenConnectionController.h; sourceTree = "<group>"; };
+		24C11D56126A69220010A2D3 /* DCTOAuthRequestTokenConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTOAuthRequestTokenConnectionController.m; sourceTree = "<group>"; };
+		24C11D57126A69220010A2D3 /* DCTOAuthSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTOAuthSignature.h; sourceTree = "<group>"; };
+		24C11D58126A69220010A2D3 /* DCTOAuthSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTOAuthSignature.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+		242DD7A3126A683B00306828 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				24988D18115176D3008F51D5 /* CoreData.framework in Frameworks */,
+				242DD7AA126A683B00306828 /* UIKit.framework in Frameworks */,
+				242DD7AC126A683B00306828 /* Foundation.framework in Frameworks */,
+				242DD7AE126A683B00306828 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		242DD797126A683B00306828 = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* DTInstapaperKitAppDelegate.h */,
-				1D3623250D0F684500981E51 /* DTInstapaperKitAppDelegate.m */,
+				24C11D2E126A69220010A2D3 /* DCTConnectionKit */,
+				24C11D0A126A68DC0010A2D3 /* DCTInstapaperKit */,
+				242DD79E126A683B00306828 /* Classes */,
+				242DD79F126A683B00306828 /* Other Sources */,
+				242DD7A0126A683B00306828 /* Resources */,
+				242DD7A1126A683B00306828 /* Frameworks */,
+				242DD7A7126A683B00306828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		242DD79E126A683B00306828 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				242DD7B6126A683B00306828 /* DCTInstapaperKitAppDelegate.h */,
+				242DD7B7126A683B00306828 /* DCTInstapaperKitAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		19C28FACFE9D520D11CA2CBB /* Products */ = {
+		242DD79F126A683B00306828 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* DCTInstapaperKit.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		24988CFE115176C7008F51D5 /* DTConnectionKit */ = {
-			isa = PBXGroup;
-			children = (
-				24988CFF115176C7008F51D5 /* DTCacheURLProtocol.h */,
-				24988D00115176C7008F51D5 /* DTCacheURLProtocol.m */,
-				24988D01115176C7008F51D5 /* DTConnection.h */,
-				24988D02115176C8008F51D5 /* DTConnection.m */,
-				24988D04115176C8008F51D5 /* DTConnectionQueue.h */,
-				24988D05115176C8008F51D5 /* DTConnectionQueue.m */,
-				24988D06115176C8008F51D5 /* DTCoreDataConnection.h */,
-				24988D07115176C8008F51D5 /* DTCoreDataConnection.m */,
-				24988D08115176C8008F51D5 /* DTFileCache.h */,
-				24988D09115176C8008F51D5 /* DTFileCache.m */,
-				24988D0A115176C8008F51D5 /* DTURLConnection.h */,
-				24988D0B115176C8008F51D5 /* DTURLConnection.m */,
-				24988D0C115176C8008F51D5 /* DTURLLoadingConnection.h */,
-				24988D0D115176C8008F51D5 /* DTURLLoadingConnection.m */,
-				244C085011A19F7E00D960A4 /* NSData+Base64.h */,
-				244C085111A19F7E00D960A4 /* NSData+Base64.m */,
-			);
-			path = DTConnectionKit;
-			sourceTree = "<group>";
-		};
-		24988D1D115176FA008F51D5 /* DTInstapaperKit */ = {
-			isa = PBXGroup;
-			children = (
-				24988E5311518AFE008F51D5 /* DTInstapaperConnection.h */,
-				24988E5411518AFE008F51D5 /* DTInstapaperConnection.m */,
-				24988D2011517711008F51D5 /* DTInstapaperLoginConnection.h */,
-				24988D2111517711008F51D5 /* DTInstapaperLoginConnection.m */,
-				24988D251151774A008F51D5 /* DTInstapaperAddConnection.h */,
-				24988D261151774A008F51D5 /* DTInstapaperAddConnection.m */,
-			);
-			path = DTInstapaperKit;
-			sourceTree = "<group>";
-		};
-		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
-			isa = PBXGroup;
-			children = (
-				24988CFE115176C7008F51D5 /* DTConnectionKit */,
-				24988D1D115176FA008F51D5 /* DTInstapaperKit */,
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
-			);
-			name = CustomTemplate;
-			sourceTree = "<group>";
-		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32CA4F630368D1EE00C91783 /* DCTInstapaperKit_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				242DD7B0126A683B00306828 /* DCTInstapaperKit_Prefix.pch */,
+				242DD7B4126A683B00306828 /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
+		242DD7A0126A683B00306828 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* DCTInstapaperKit-Info.plist */,
+				242DD7AF126A683B00306828 /* DCTInstapaperKit-Info.plist */,
+				242DD7B1126A683B00306828 /* InfoPlist.strings */,
+				242DD7B9126A683B00306828 /* MainWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+		242DD7A1126A683B00306828 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
-				24988D17115176D3008F51D5 /* CoreData.framework */,
+				242DD7A9126A683B00306828 /* UIKit.framework */,
+				242DD7AB126A683B00306828 /* Foundation.framework */,
+				242DD7AD126A683B00306828 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		242DD7A7126A683B00306828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				242DD7A6126A683B00306828 /* DCTInstapaperKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C11D0A126A68DC0010A2D3 /* DCTInstapaperKit */ = {
+			isa = PBXGroup;
+			children = (
+				24C11D0B126A68DC0010A2D3 /* DTInstapaperAddConnection.h */,
+				24C11D0C126A68DC0010A2D3 /* DTInstapaperAddConnection.m */,
+				24C11D0D126A68DC0010A2D3 /* DTInstapaperConnection.h */,
+				24C11D0E126A68DC0010A2D3 /* DTInstapaperConnection.m */,
+				24C11D0F126A68DC0010A2D3 /* DTInstapaperLoginConnection.h */,
+				24C11D10126A68DC0010A2D3 /* DTInstapaperLoginConnection.m */,
+			);
+			path = DCTInstapaperKit;
+			sourceTree = "<group>";
+		};
+		24C11D2E126A69220010A2D3 /* DCTConnectionKit */ = {
+			isa = PBXGroup;
+			children = (
+				24C11D2F126A69220010A2D3 /* Caching */,
+				24C11D34126A69220010A2D3 /* Categories */,
+				24C11D3D126A69220010A2D3 /* Connection Controllers */,
+				24C11D44126A69220010A2D3 /* DCTConnectionController.h */,
+				24C11D45126A69220010A2D3 /* DCTConnectionController.m */,
+				24C11D46126A69220010A2D3 /* DCTConnectionQueue+Singleton.h */,
+				24C11D47126A69220010A2D3 /* DCTConnectionQueue+Singleton.m */,
+				24C11D48126A69220010A2D3 /* DCTConnectionQueue.h */,
+				24C11D49126A69220010A2D3 /* DCTConnectionQueue.m */,
+				24C11D4A126A69220010A2D3 /* DCTRESTController.h */,
+				24C11D4B126A69220010A2D3 /* DCTRESTController.m */,
+				24C11D4C126A69220010A2D3 /* DCTURLConnection.h */,
+				24C11D4D126A69220010A2D3 /* DCTURLConnection.m */,
+				24C11D4E126A69220010A2D3 /* OAuth */,
+			);
+			name = DCTConnectionKit;
+			path = /Users/danielctull/Dropbox/Programs/Cocoa/Frameworks/DCTConnectionKit/DCTConnectionKit;
+			sourceTree = "<absolute>";
+		};
+		24C11D2F126A69220010A2D3 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				24C11D30126A69220010A2D3 /* DTCacheURLProtocol.h */,
+				24C11D31126A69220010A2D3 /* DTCacheURLProtocol.m */,
+				24C11D32126A69220010A2D3 /* DTFileCache.h */,
+				24C11D33126A69220010A2D3 /* DTFileCache.m */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		24C11D34126A69220010A2D3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				24C11D35126A69220010A2D3 /* NSBundle+DTInfoPlist.h */,
+				24C11D36126A69220010A2D3 /* NSBundle+DTInfoPlist.m */,
+				24C11D37126A69220010A2D3 /* NSData+Base64.h */,
+				24C11D38126A69220010A2D3 /* NSData+Base64.m */,
+				24C11D39126A69220010A2D3 /* NSDictionary+DTLocateObjectForKey.h */,
+				24C11D3A126A69220010A2D3 /* NSDictionary+DTLocateObjectForKey.m */,
+				24C11D3B126A69220010A2D3 /* NSString+DTURLEncoding.h */,
+				24C11D3C126A69220010A2D3 /* NSString+DTURLEncoding.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		24C11D3D126A69220010A2D3 /* Connection Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24C11D3E126A69220010A2D3 /* DCTCoreDataConnectionController.h */,
+				24C11D3F126A69220010A2D3 /* DCTCoreDataConnectionController.m */,
+				24C11D40126A69220010A2D3 /* DCTRequestConnectionController.h */,
+				24C11D41126A69220010A2D3 /* DCTRequestConnectionController.m */,
+				24C11D42126A69220010A2D3 /* DCTURLLoadingConnectionController.h */,
+				24C11D43126A69220010A2D3 /* DCTURLLoadingConnectionController.m */,
+			);
+			path = "Connection Controllers";
+			sourceTree = "<group>";
+		};
+		24C11D4E126A69220010A2D3 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				24C11D4F126A69220010A2D3 /* DCTOAuthAccessTokenConnectionController.h */,
+				24C11D50126A69220010A2D3 /* DCTOAuthAccessTokenConnectionController.m */,
+				24C11D51126A69220010A2D3 /* DCTOAuthConnectionController.h */,
+				24C11D52126A69220010A2D3 /* DCTOAuthConnectionController.m */,
+				24C11D53126A69220010A2D3 /* DCTOAuthController.h */,
+				24C11D54126A69220010A2D3 /* DCTOAuthController.m */,
+				24C11D55126A69220010A2D3 /* DCTOAuthRequestTokenConnectionController.h */,
+				24C11D56126A69220010A2D3 /* DCTOAuthRequestTokenConnectionController.m */,
+				24C11D57126A69220010A2D3 /* DCTOAuthSignature.h */,
+				24C11D58126A69220010A2D3 /* DCTOAuthSignature.m */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* DCTInstapaperKit */ = {
+		242DD7A5126A683B00306828 /* DCTInstapaperKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DCTInstapaperKit" */;
+			buildConfigurationList = 242DD7BE126A683B00306828 /* Build configuration list for PBXNativeTarget "DCTInstapaperKit" */;
 			buildPhases = (
-				1D60588D0D05DD3D006BFB54 /* Resources */,
-				1D60588E0D05DD3D006BFB54 /* Sources */,
-				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				242DD7A2126A683B00306828 /* Sources */,
+				242DD7A3126A683B00306828 /* Frameworks */,
+				242DD7A4126A683B00306828 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DCTInstapaperKit;
-			productName = DTInstapaperKit;
-			productReference = 1D6058910D05DD3D006BFB54 /* DCTInstapaperKit.app */;
+			productName = DCTInstapaperKit;
+			productReference = 242DD7A6126A683B00306828 /* DCTInstapaperKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29B97313FDCFA39411CA2CEA /* Project object */ = {
+		242DD799126A683B00306828 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DCTInstapaperKit" */;
-			compatibilityVersion = "Xcode 3.1";
+			attributes = {
+				ORGANIZATIONNAME = "Daniel Tull";
+			};
+			buildConfigurationList = 242DD79C126A683B00306828 /* Build configuration list for PBXProject "DCTInstapaperKit" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			mainGroup = 242DD797126A683B00306828;
+			productRefGroup = 242DD7A7126A683B00306828 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* DCTInstapaperKit */,
+				242DD7A5126A683B00306828 /* DCTInstapaperKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+		242DD7A4126A683B00306828 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				242DD7B3126A683B00306828 /* InfoPlist.strings in Resources */,
+				242DD7BB126A683B00306828 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+		242DD7A2126A683B00306828 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* DTInstapaperKitAppDelegate.m in Sources */,
-				24988D0E115176C8008F51D5 /* DTCacheURLProtocol.m in Sources */,
-				24988D0F115176C8008F51D5 /* DTConnection.m in Sources */,
-				24988D11115176C8008F51D5 /* DTConnectionQueue.m in Sources */,
-				24988D12115176C8008F51D5 /* DTCoreDataConnection.m in Sources */,
-				24988D13115176C8008F51D5 /* DTFileCache.m in Sources */,
-				24988D14115176C8008F51D5 /* DTURLConnection.m in Sources */,
-				24988D15115176C8008F51D5 /* DTURLLoadingConnection.m in Sources */,
-				24988D2211517711008F51D5 /* DTInstapaperLoginConnection.m in Sources */,
-				24988D271151774A008F51D5 /* DTInstapaperAddConnection.m in Sources */,
-				24988E5511518AFE008F51D5 /* DTInstapaperConnection.m in Sources */,
-				244C085211A19F7E00D960A4 /* NSData+Base64.m in Sources */,
+				242DD7B5126A683B00306828 /* main.m in Sources */,
+				242DD7B8126A683B00306828 /* DCTInstapaperKitAppDelegate.m in Sources */,
+				24C11D11126A68DC0010A2D3 /* DTInstapaperAddConnection.m in Sources */,
+				24C11D12126A68DC0010A2D3 /* DTInstapaperConnection.m in Sources */,
+				24C11D13126A68DC0010A2D3 /* DTInstapaperLoginConnection.m in Sources */,
+				24C11D59126A69230010A2D3 /* DTCacheURLProtocol.m in Sources */,
+				24C11D5A126A69230010A2D3 /* DTFileCache.m in Sources */,
+				24C11D5B126A69230010A2D3 /* NSBundle+DTInfoPlist.m in Sources */,
+				24C11D5C126A69230010A2D3 /* NSData+Base64.m in Sources */,
+				24C11D5D126A69230010A2D3 /* NSDictionary+DTLocateObjectForKey.m in Sources */,
+				24C11D5E126A69230010A2D3 /* NSString+DTURLEncoding.m in Sources */,
+				24C11D5F126A69230010A2D3 /* DCTCoreDataConnectionController.m in Sources */,
+				24C11D60126A69230010A2D3 /* DCTRequestConnectionController.m in Sources */,
+				24C11D61126A69230010A2D3 /* DCTURLLoadingConnectionController.m in Sources */,
+				24C11D62126A69230010A2D3 /* DCTConnectionController.m in Sources */,
+				24C11D63126A69230010A2D3 /* DCTConnectionQueue+Singleton.m in Sources */,
+				24C11D64126A69230010A2D3 /* DCTConnectionQueue.m in Sources */,
+				24C11D65126A69230010A2D3 /* DCTRESTController.m in Sources */,
+				24C11D66126A69230010A2D3 /* DCTURLConnection.m in Sources */,
+				24C11D67126A69230010A2D3 /* DCTOAuthAccessTokenConnectionController.m in Sources */,
+				24C11D68126A69230010A2D3 /* DCTOAuthConnectionController.m in Sources */,
+				24C11D69126A69230010A2D3 /* DCTOAuthController.m in Sources */,
+				24C11D6A126A69230010A2D3 /* DCTOAuthRequestTokenConnectionController.m in Sources */,
+				24C11D6B126A69230010A2D3 /* DCTOAuthSignature.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		242DD7B1126A683B00306828 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242DD7B2126A683B00306828 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		242DD7B9126A683B00306828 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242DD7BA126A683B00306828 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		1D6058940D05DD3E006BFB54 /* Debug */ = {
+		242DD7BC126A683B00306828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		242DD7BD126A683B00306828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		242DD7BF126A683B00306828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DCTInstapaperKit_Prefix.pch;
 				INFOPLIST_FILE = "DCTInstapaperKit-Info.plist";
-				PRODUCT_NAME = DCTInstapaperKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		1D6058950D05DD3E006BFB54 /* Release */ = {
+		242DD7C0126A683B00306828 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,60 +424,34 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DCTInstapaperKit_Prefix.pch;
 				INFOPLIST_FILE = "DCTInstapaperKit-Info.plist";
-				PRODUCT_NAME = DCTInstapaperKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C01FCF4F08A954540054247B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
-			};
-			name = Debug;
-		};
-		C01FCF5008A954540054247B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DCTInstapaperKit" */ = {
+		242DD79C126A683B00306828 /* Build configuration list for PBXProject "DCTInstapaperKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D6058940D05DD3E006BFB54 /* Debug */,
-				1D6058950D05DD3E006BFB54 /* Release */,
+				242DD7BC126A683B00306828 /* Debug */,
+				242DD7BD126A683B00306828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DCTInstapaperKit" */ = {
+		242DD7BE126A683B00306828 /* Build configuration list for PBXNativeTarget "DCTInstapaperKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4F08A954540054247B /* Debug */,
-				C01FCF5008A954540054247B /* Release */,
+				242DD7BF126A683B00306828 /* Debug */,
+				242DD7C0126A683B00306828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+	rootObject = 242DD799126A683B00306828 /* Project object */;
 }
