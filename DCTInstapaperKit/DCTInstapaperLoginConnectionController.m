@@ -6,9 +6,9 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DCTInstapaperLoginConnection.h"
+#import "DCTInstapaperLoginConnectionController.h"
 
-@implementation DCTInstapaperLoginConnection
+@implementation DCTInstapaperLoginConnectionController
 
 - (NSMutableURLRequest *)newRequest {
 	NSMutableURLRequest *request = [super newRequest];

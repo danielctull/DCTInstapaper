@@ -8,6 +8,6 @@
 
 #import "DCTInstapaperConnectionController.h"
 
-@interface DCTInstapaperLoginConnection : DCTInstapaperConnectionController {
+@interface DCTInstapaperLoginConnectionController : DCTInstapaperConnectionController {
 }
 @end

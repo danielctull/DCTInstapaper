@@ -7,8 +7,8 @@
 //
 
 #import "DCTInstapaperKitAppDelegate.h"
-#import "DCTInstapaperLoginConnection.h"
-#import "DCTInstapaperAddConnection.h"
+#import "DCTInstapaperLoginConnectionController.h"
+#import "DCTInstapaperAddConnectionController.h"
 
 @implementation DCTInstapaperKitAppDelegate
 
@@ -17,11 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
-	DCTInstapaperLoginConnection *login = [[DCTInstapaperLoginConnection alloc] init];
+	DCTInstapaperLoginConnectionController *login = [[DCTInstapaperLoginConnectionController alloc] init];
 	login.username = @"danieltull";
 	[login connect];
 	
-	DCTInstapaperAddConnection *add = [[DCTInstapaperAddConnection alloc] init];
+	DCTInstapaperAddConnectionController *add = [[DCTInstapaperAddConnectionController alloc] init];
 	add.username = @"danieltull";
 	add.url = @"http://www.engadget.com/2010/03/17/uk-folding-plug-takes-home-design-award-emerges-in-usb-infused/";
 	[add connect];

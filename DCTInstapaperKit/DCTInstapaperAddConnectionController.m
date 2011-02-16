@@ -6,9 +6,9 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DCTInstapaperAddConnection.h"
+#import "DCTInstapaperAddConnectionController.h"
 
-@implementation DCTInstapaperAddConnection
+@implementation DCTInstapaperAddConnectionController
 
 @synthesize url, title, selection;
 
