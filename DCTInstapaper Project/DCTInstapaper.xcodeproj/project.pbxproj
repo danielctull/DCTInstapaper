@@ -39,12 +39,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		242DD7A6126A683B00306828 /* DCTInstapaperKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTInstapaperKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		242DD7A6126A683B00306828 /* DCTInstapaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTInstapaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		242DD7A9126A683B00306828 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		242DD7AB126A683B00306828 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		242DD7AD126A683B00306828 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		242DD7AF126A683B00306828 /* DCTInstapaperKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTInstapaperKit-Info.plist"; sourceTree = "<group>"; };
-		242DD7B0126A683B00306828 /* DCTInstapaperKit_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTInstapaperKit_Prefix.pch; sourceTree = "<group>"; };
+		242DD7AF126A683B00306828 /* DCTInstapaper-Info.plist */ = {isa = PBXFileReference; path = "DCTInstapaper-Info.plist"; sourceTree = "<group>"; };
+		242DD7B0126A683B00306828 /* DCTInstapaper_Prefix.pch */ = {isa = PBXFileReference; path = DCTInstapaper_Prefix.pch; sourceTree = "<group>"; };
 		242DD7B2126A683B00306828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		242DD7B4126A683B00306828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		242DD7B6126A683B00306828 /* DCTInstapaperKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTInstapaperKitAppDelegate.h; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		242DD79F126A683B00306828 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				242DD7B0126A683B00306828 /* DCTInstapaperKit_Prefix.pch */,
+				242DD7B0126A683B00306828 /* DCTInstapaper_Prefix.pch */,
 				242DD7B4126A683B00306828 /* main.m */,
 			);
 			name = "Other Sources";
@@ -144,7 +144,7 @@
 		242DD7A0126A683B00306828 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				242DD7AF126A683B00306828 /* DCTInstapaperKit-Info.plist */,
+				242DD7AF126A683B00306828 /* DCTInstapaper-Info.plist */,
 				242DD7B1126A683B00306828 /* InfoPlist.strings */,
 				242DD7B9126A683B00306828 /* MainWindow.xib */,
 			);
@@ -164,7 +164,7 @@
 		242DD7A7126A683B00306828 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				242DD7A6126A683B00306828 /* DCTInstapaperKit.app */,
+				242DD7A6126A683B00306828 /* DCTInstapaper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		242DD7A5126A683B00306828 /* DCTInstapaperKit */ = {
+		242DD7A5126A683B00306828 /* DCTInstapaper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 242DD7BE126A683B00306828 /* Build configuration list for PBXNativeTarget "DCTInstapaperKit" */;
+			buildConfigurationList = 242DD7BE126A683B00306828 /* Build configuration list for PBXNativeTarget "DCTInstapaper" */;
 			buildPhases = (
 				242DD7A2126A683B00306828 /* Sources */,
 				242DD7A3126A683B00306828 /* Frameworks */,
@@ -276,9 +276,9 @@
 			);
 			dependencies = (
 			);
-			name = DCTInstapaperKit;
+			name = DCTInstapaper;
 			productName = DCTInstapaperKit;
-			productReference = 242DD7A6126A683B00306828 /* DCTInstapaperKit.app */;
+			productReference = 242DD7A6126A683B00306828 /* DCTInstapaper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +289,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Daniel Tull";
 			};
-			buildConfigurationList = 242DD79C126A683B00306828 /* Build configuration list for PBXProject "DCTInstapaperKit" */;
+			buildConfigurationList = 242DD79C126A683B00306828 /* Build configuration list for PBXProject "DCTInstapaper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -301,7 +301,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				242DD7A5126A683B00306828 /* DCTInstapaperKit */,
+				242DD7A5126A683B00306828 /* DCTInstapaper */,
 			);
 		};
 /* End PBXProject section */
@@ -410,9 +410,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DCTInstapaperKit_Prefix.pch;
-				INFOPLIST_FILE = "DCTInstapaperKit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = DCTInstapaper_Prefix.pch;
+				INFOPLIST_FILE = "DCTInstapaper-Info.plist";
+				PRODUCT_NAME = DCTInstapaper;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -423,9 +423,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DCTInstapaperKit_Prefix.pch;
-				INFOPLIST_FILE = "DCTInstapaperKit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = DCTInstapaper_Prefix.pch;
+				INFOPLIST_FILE = "DCTInstapaper-Info.plist";
+				PRODUCT_NAME = DCTInstapaper;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,7 +434,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		242DD79C126A683B00306828 /* Build configuration list for PBXProject "DCTInstapaperKit" */ = {
+		242DD79C126A683B00306828 /* Build configuration list for PBXProject "DCTInstapaper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				242DD7BC126A683B00306828 /* Debug */,
@@ -443,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		242DD7BE126A683B00306828 /* Build configuration list for PBXNativeTarget "DCTInstapaperKit" */ = {
+		242DD7BE126A683B00306828 /* Build configuration list for PBXNativeTarget "DCTInstapaper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				242DD7BF126A683B00306828 /* Debug */,
