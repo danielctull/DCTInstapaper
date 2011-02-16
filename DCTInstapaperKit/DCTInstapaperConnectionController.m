@@ -6,10 +6,10 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DCTInstapaperConnection.h"
+#import "DCTInstapaperConnectionController.h"
 #import "NSData+Base64.h"
 
-@implementation DCTInstapaperConnection
+@implementation DCTInstapaperConnectionController
 @synthesize username, password;
 
 - (void)dealloc {

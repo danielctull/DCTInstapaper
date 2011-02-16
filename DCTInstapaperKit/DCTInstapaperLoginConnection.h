@@ -6,8 +6,8 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DCTInstapaperConnection.h"
+#import "DCTInstapaperConnectionController.h"
 
-@interface DCTInstapaperLoginConnection : DCTInstapaperConnection {
+@interface DCTInstapaperLoginConnection : DCTInstapaperConnectionController {
 }
 @end
