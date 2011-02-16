@@ -37,8 +37,7 @@
 	
 	if (self.selection) [bodyString appendFormat:@"&selection=%@", self.selection];
 	
-	NSLog(@"%@:%s %@", self, _cmd, bodyString);
-	
+	NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), bodyString);
 	NSData *body = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
 	[request setHTTPBody:body];
 	[bodyString release];
@@ -59,7 +58,7 @@
 	
 	NSInteger statusCode = [httpResponse statusCode];
 	
-	NSLog(@"%@:%s %i", self, _cmd, statusCode);
+	NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), statusCode);
 	
 	if (statusCode == 201) {
 		
