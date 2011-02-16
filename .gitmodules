@@ -1,0 +1,3 @@
+[submodule "DCTConnectionController"]
+	path = DCTConnectionController
+	url = git://github.com/danielctull/DCTConnectionController.git
