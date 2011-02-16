@@ -8,7 +8,7 @@
 
 #import "DCTConnectionController.h"
 
-@interface DCTInstapaperConnection : DCTConnectionController {
+@interface DCTInstapaperConnectionController : DCTConnectionController {
 	NSString *username, *password;
 }
 @property (nonatomic, retain) NSString *username, *password;
