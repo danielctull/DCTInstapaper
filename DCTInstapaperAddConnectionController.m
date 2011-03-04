@@ -19,30 +19,16 @@
 	[super dealloc];
 }
 
-- (NSMutableURLRequest *)newRequest {
-	
-	NSMutableURLRequest *request = [super newRequest];
-	
-	[request setURL:[NSURL URLWithString:@"https://www.instapaper.com/api/add"]];
-	
-	
-	NSMutableString *bodyString = [[NSMutableString alloc] initWithData:[request HTTPBody] encoding:NSUTF8StringEncoding];
-	
-	[bodyString appendFormat:@"&url=%@", [self.url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-	
-	if (self.title) 
-		[bodyString appendFormat:@"&title=%@", self.title];
-	else
-		[bodyString appendString:@"&auto-title=1"];
-	
-	if (self.selection) [bodyString appendFormat:@"&selection=%@", self.selection];
-	
-	NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), bodyString);
-	NSData *body = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
-	[request setHTTPBody:body];
-	[bodyString release];
-	
-	return request;
+- (NSString *)baseURLString {
+	return @"https://www.instapaper.com/api/add";
+}
+
++ (NSArray *)bodyProperties {
+	return [NSArray arrayWithObjects:@"title", @"url", @"selection", nil];
+}
+
+- (NSString *)url {
+	return [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (void)receivedResponse:(NSURLResponse *)response {

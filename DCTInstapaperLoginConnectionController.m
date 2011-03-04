@@ -10,10 +10,8 @@
 
 @implementation DCTInstapaperLoginConnectionController
 
-- (NSMutableURLRequest *)newRequest {
-	NSMutableURLRequest *request = [super newRequest];
-	[request setURL:[NSURL URLWithString:@"https://www.instapaper.com/api/authenticate"]];
-	return request;
+- (NSString *)baseURLString {
+	return @"https://www.instapaper.com/api/authenticate";
 }
 
 @end

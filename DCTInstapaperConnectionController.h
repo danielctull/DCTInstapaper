@@ -6,9 +6,9 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import "DCTConnectionController.h"
+#import "DCTRESTController.h"
 
-@interface DCTInstapaperConnectionController : DCTConnectionController {
+@interface DCTInstapaperConnectionController : DCTRESTController {
 	NSString *username, *password;
 }
 @property (nonatomic, retain) NSString *username, *password;

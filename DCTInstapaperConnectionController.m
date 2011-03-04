@@ -18,24 +18,23 @@
 	[super dealloc];
 }
 
-- (NSMutableURLRequest *)newRequest {
+- (id)init {
+	if (!(self = [super init])) return nil;
+	
 	self.type = DCTConnectionControllerTypePost;
 	
-	NSMutableURLRequest *request = [super newRequest];
-		
+	return self;
+}
+
++ (NSArray *)headerProperties {
+	return [NSArray arrayWithObject:@"Authorization"];
+}
+
+- (NSString *)Authorization {
 	NSString *authorisationString = [NSString stringWithFormat:@"%@:%@", username, password];
 	NSData *authorisationData = [authorisationString dataUsingEncoding:NSUTF8StringEncoding];
 	NSString *authorisationEncodedString = [authorisationData base64EncodedString];
-	NSString *authorisationHeader = [NSString stringWithFormat:@"Basic %@", authorisationEncodedString];
-	[request addValue:authorisationHeader forHTTPHeaderField:@"Authorization"];
-	
-	return request;
-}
-
-- (void)receivedError:(NSError *)error {
-}
-
-- (void)receivedObject:(NSObject *)object {
+	return [NSString stringWithFormat:@"Basic %@", authorisationEncodedString];
 }
 
 - (void)receivedResponse:(NSURLResponse *)response {
@@ -54,6 +53,8 @@
 	} else if (statusCode == 500) {
 		
 	}
+	
+	[super receivedResponse:response];
 	
 	//200: OK
 	//403: Invalid username or password.
