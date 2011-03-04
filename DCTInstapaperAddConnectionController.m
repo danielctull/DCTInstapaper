@@ -32,24 +32,21 @@
 }
 
 - (void)receivedResponse:(NSURLResponse *)response {
-	//201: This URL has been successfully added to this Instapaper account.
-	//400: Bad request. Probably missing a required parameter, such as url.
-	//403: Invalid username or password.
-	//500: The service encountered an error. Please try again later.
+	
 	[super receivedResponse:response];
 	
 	if (![response isKindOfClass:[NSHTTPURLResponse class]]) return;
 	
-	NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+	NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
 	
-	NSInteger statusCode = [httpResponse statusCode];
+	//201: This URL has been successfully added to this Instapaper account.
+	//400: Bad request. Probably missing a required parameter, such as url.
 	
-	NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), statusCode);
-	
-	if (statusCode == 201) {
-		
-	} else if (statusCode == 403) {
-		
+	if (statusCode == 400) {
+		NSError *error = [NSError errorWithDomain:@"DCTInstapaper" 
+											 code:statusCode
+										 userInfo:nil];
+		[self receivedError:error];
 	}
 }
 

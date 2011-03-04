@@ -39,26 +39,23 @@
 
 - (void)receivedResponse:(NSURLResponse *)response {
 	
-	if (![response isKindOfClass:[NSHTTPURLResponse class]]) return [super receivedResponse:response];
-	
-	NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-	
-	NSInteger statusCode = [httpResponse statusCode];
-	
-	//NSLog(@"%@:%s %i", self, _cmd, statusCode);
-	if (statusCode == 200) {
-		
-	} else if (statusCode == 403) {
-		
-	} else if (statusCode == 500) {
-		
-	}
-	
 	[super receivedResponse:response];
+	
+	if (![response isKindOfClass:[NSHTTPURLResponse class]]) return;
+	
+	NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
 	
 	//200: OK
 	//403: Invalid username or password.
 	//500: The service encountered an error. Please try again later.
+	
+	if (statusCode == 403 || statusCode == 500) {
+		
+		NSError *error = [NSError errorWithDomain:@"DCTInstapaper" 
+											 code:statusCode
+										 userInfo:nil];
+		[self receivedError:error];
+	}
 }
 
 @end

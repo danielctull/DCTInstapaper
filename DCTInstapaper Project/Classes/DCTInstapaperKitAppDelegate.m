@@ -18,15 +18,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
 	DCTInstapaperLoginConnectionController *login = [[DCTInstapaperLoginConnectionController alloc] init];
-	login.username = @"danieltull";
+	login.username = @"your username";
+	login.password = @"your password";
+	[login addResponseBlock:^(NSURLResponse *response) {
+		NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
+		NSLog(@"DCTInstapaperLoginConnectionController returned response: %i", statusCode);
+	}];
 	[login connect];
 	
 	DCTInstapaperAddConnectionController *add = [[DCTInstapaperAddConnectionController alloc] init];
-	add.username = @"danieltull";
-	add.url = @"http://www.engadget.com/2010/03/17/uk-folding-plug-takes-home-design-award-emerges-in-usb-infused/";
+	add.username = @"your username";
+	add.password = @"your password";
+	add.url = @"http://www.engadget.com/2011/03/03/editorial-its-apples-post-pc-world-were-all-just-living/";
+	[add addResponseBlock:^(NSURLResponse *response) {
+		NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
+		NSLog(@"DCTInstapaperAddConnectionController returned response: %i", statusCode);
+	}];
 	[add connect];
-	
-    // Override point for customization after application launch
 	
     [window makeKeyAndVisible];
 	
