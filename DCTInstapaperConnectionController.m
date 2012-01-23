@@ -38,13 +38,8 @@
 #import "NSData+Base64.h"
 
 @implementation DCTInstapaperConnectionController
-@synthesize username, password;
-
-- (void)dealloc {
-	[username release]; username = nil;
-	[password release]; password = nil;
-	[super dealloc];
-}
+@synthesize username;
+@synthesize password;
 
 - (id)init {
 	if (!(self = [super init])) return nil;
@@ -54,20 +49,31 @@
 	return self;
 }
 
+- (NSString *)baseURLString {
+	return @"https://www.instapaper.com/api/";
+}
+
 + (NSArray *)headerProperties {
 	return [NSArray arrayWithObject:@"Authorization"];
 }
 
-- (NSString *)Authorization {
-	NSString *authorisationString = [NSString stringWithFormat:@"%@:%@", username, password];
-	NSData *authorisationData = [authorisationString dataUsingEncoding:NSUTF8StringEncoding];
-	NSString *authorisationEncodedString = [authorisationData base64EncodedString];
-	return [NSString stringWithFormat:@"Basic %@", authorisationEncodedString];
+- (id)valueForConnectionKey:(id)key {
+	
+	if ([key isEqualToString:@"Authorization"]) {
+		NSString *authorisationString = [NSString stringWithFormat:@"%@:%@", username, password];
+		NSData *authorisationData = [authorisationString dataUsingEncoding:NSUTF8StringEncoding];
+		NSString *authorisationEncodedString = [authorisationData base64Encoding];
+		return [NSString stringWithFormat:@"Basic %@", authorisationEncodedString];
+	}
+	
+	return [super valueForConnectionKey:key];
 }
 
-- (void)receivedResponse:(NSURLResponse *)response {
+- (void)connectionDidReceiveResponse {
 	
-	[super receivedResponse:response];
+	[super connectionDidReceiveResponse];
+	
+	NSURLResponse *response = self.returnedResponse;
 	
 	if (![response isKindOfClass:[NSHTTPURLResponse class]]) return;
 	
@@ -79,10 +85,10 @@
 	
 	if (statusCode == 403 || statusCode == 500) {
 		
-		NSError *error = [NSError errorWithDomain:@"DCTInstapaper" 
-											 code:statusCode
-										 userInfo:nil];
-		[self receivedError:error];
+		self.returnedError = [NSError errorWithDomain:@"DCTInstapaper" 
+												 code:statusCode
+											 userInfo:nil];
+		[self connectionDidFail];
 	}
 }
 

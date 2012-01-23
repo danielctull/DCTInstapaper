@@ -36,8 +36,8 @@
 
 #import "DCTInstapaperConnectionController.h"
 
-@interface DCTInstapaperAddConnectionController : DCTInstapaperConnectionController {
-	NSString *url, *title, *selection;
-}
-@property (nonatomic, retain) NSString *url, *title, *selection;
+@interface DCTInstapaperAddConnectionController : DCTInstapaperConnectionController
+@property (nonatomic, retain) NSString *url;
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *selection;
 @end

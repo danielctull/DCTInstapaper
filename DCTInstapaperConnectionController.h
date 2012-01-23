@@ -34,10 +34,9 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "DCTRESTController.h"
+#import "DCTRESTConnectionController.h"
 
-@interface DCTInstapaperConnectionController : DCTRESTController {
-	NSString *username, *password;
-}
-@property (nonatomic, retain) NSString *username, *password;
+@interface DCTInstapaperConnectionController : DCTRESTConnectionController
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *password;
 @end

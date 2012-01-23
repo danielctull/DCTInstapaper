@@ -36,5 +36,5 @@
 
 #import "DCTInstapaperConnectionController.h"
 
-@interface DCTInstapaperLoginConnectionController : DCTInstapaperConnectionController {}
+@interface DCTInstapaperLoginConnectionController : DCTInstapaperConnectionController
 @end

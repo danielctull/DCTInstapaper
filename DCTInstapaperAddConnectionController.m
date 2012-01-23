@@ -38,18 +38,14 @@
 
 @implementation DCTInstapaperAddConnectionController
 
-@synthesize url, title, selection;
-
-- (void)dealloc {
-	[url release]; url = nil;
-	[title release]; title = nil;
-	[selection release]; selection = nil;
-	[super dealloc];
-}
+@synthesize url;
+@synthesize title;
+@synthesize selection;
 
 - (NSString *)baseURLString {
-	return @"https://www.instapaper.com/api/add";
+	return [NSString stringWithFormat:@"%@add", [super baseURLString]];
 }
+
 
 + (NSArray *)bodyProperties {
 	return [NSArray arrayWithObjects:@"title", @"url", @"selection", nil];
@@ -59,9 +55,11 @@
 	return [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
-- (void)receivedResponse:(NSURLResponse *)response {
+- (void)connectionDidReceiveResponse {
 	
-	[super receivedResponse:response];
+	[super connectionDidReceiveResponse];
+	
+	NSURLResponse *response = self.returnedResponse;
 	
 	if (![response isKindOfClass:[NSHTTPURLResponse class]]) return;
 	
@@ -71,10 +69,10 @@
 	//400: Bad request. Probably missing a required parameter, such as url.
 	
 	if (statusCode == 400) {
-		NSError *error = [NSError errorWithDomain:@"DCTInstapaper" 
-											 code:statusCode
-										 userInfo:nil];
-		[self receivedError:error];
+		self.returnedError = [NSError errorWithDomain:@"DCTInstapaper" 
+												 code:statusCode
+											 userInfo:nil];
+		[self connectionDidFail];
 	}
 }
 

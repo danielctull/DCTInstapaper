@@ -39,7 +39,7 @@
 @implementation DCTInstapaperLoginConnectionController
 
 - (NSString *)baseURLString {
-	return @"https://www.instapaper.com/api/authenticate";
+	return [NSString stringWithFormat:@"%@authenticate", [super baseURLString]];
 }
 
 @end
